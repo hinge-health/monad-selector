@@ -1,0 +1,28 @@
+{
+  "author": "Julián Díaz <julian@hingehealth.com>",
+  "description": "A collection of utilities for writing monadic state selector functions.",
+  "devDependencies": {
+    "@types/jest": "24.0.15",
+    "jest": "24.8.0",
+    "ts-jest": "24.0.2",
+    "tslint": "5.18.0",
+    "tslint-config-prettier": "1.18.0",
+    "typescript": "3.5.3"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "es/index.js",
+  "name": "monad-selector",
+  "private": false,
+  "repository": "https://github.com/hinge-health/monad-selector",
+  "scripts": {
+    "build": "tsc -b --pretty src && tsc -b --pretty src/tsconfig.es6.json",
+    "build-test": "tsc -b --pretty test",
+    "lint": "tslint -p .",
+    "prepublish": "tsc -b -f -v src && tsc -b -f -v src/tsconfig.es6.json",
+    "test": "jest",
+    "ts-watch": "tsc -b -w src",
+    "watch": "jest --watch"
+  },
+  "version": "0.0.1"
+}

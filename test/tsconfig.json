@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "rootDir": "../"
+  },
+  "extends": "../tsconfig",
+  "include": [
+    "./**.ts",
+    "../src/**.ts"
+  ]
+}
